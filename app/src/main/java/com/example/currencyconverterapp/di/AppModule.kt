@@ -5,7 +5,7 @@ import com.example.currencyconverterapp.data.remote.CurrencyAPI
 import com.example.currencyconverterapp.data.repositories.CurrencyRemoteIMP
 import com.example.currencyconverterapp.domain.data_interface.CurrencyRemote
 import com.example.currencyconverterapp.domain.usecase.CurrencyUseCase
-import com.example.currencyconverterapp.presentaton.ui.CrrancyHome.CurrencyViewModel
+import com.example.currencyconverterapp.presentaton.ui.currency_home.CurrencyViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel

@@ -1,4 +1,4 @@
-package com.example.currencyconverterapp.presentaton.ui.currencydetails
+package com.example.currencyconverterapp.presentaton.ui.currency_details
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

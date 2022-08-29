@@ -12,7 +12,7 @@ class CurrencyRemoteIMP(private val api: CurrencyAPI) : CurrencyRemote {
         return try {
             val response = api.getRates(base)
             val result = response.body()
-            Log.v("DataResult","ResultIs:"+Gson().toJson(result).toString())
+            Log.v("DataResult", "ResultIs:" + Gson().toJson(result).toString())
             if (result != null) {
                 Resource.Success(result)
             } else {
@@ -20,7 +20,7 @@ class CurrencyRemoteIMP(private val api: CurrencyAPI) : CurrencyRemote {
             }
 
         } catch (e: Exception) {
-            Log.v("DataResult",e.message.toString())
+            Log.v("DataResult", e.message.toString())
 
             Resource.Error(e.message ?: "An error ")
         }

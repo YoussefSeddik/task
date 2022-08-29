@@ -1,5 +1,6 @@
 package com.example.currencyconverterapp.data.response
 
+import com.example.currencyconverterapp.domain.model.CurrencyModel
 import com.google.gson.annotations.SerializedName
 
 data class Rates(
@@ -68,5 +69,13 @@ data class Rates(
     @SerializedName("USD")
     val uSD: Double,
     @SerializedName("ZAR")
-    val zAR: Double
-)
+    val zAR: Double,
+) {
+    fun getRates(): List<CurrencyModel> = listOf(
+        CurrencyModel("AUD", aUD.toFloat()),
+        CurrencyModel("BGN", bGN.toFloat()),
+        CurrencyModel("EUR", eUR.toFloat()),
+        CurrencyModel("BRL", bRL.toFloat())
+    )
+
+}
